@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>ApplicationMainWindow</class>
+    <widget class="QMainWindow" name="ApplicationMainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>800</width>
+                <height>600</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>800</width>
+                <height>600</height>
+            </size>
+        </property>
+        <property name="font">
+            <font>
+                <pointsize>8</pointsize>
+            </font>
+        </property>
+        <property name="focusPolicy">
+            <enum>Qt::TabFocus</enum>
+        </property>
+        <property name="windowTitle">
+            <string>Callcenter - Address book</string>
+        </property>
+        <property name="windowFilePath">
+            <string notr="true"/>
+        </property>
+        <property name="tabShape">
+            <enum>QTabWidget::Triangular</enum>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QLabel" name="department_label">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>40</y>
+                        <width>100</width>
+                        <height>24</height>
+                    </rect>
+                </property>
+                <property name="focusPolicy">
+                    <enum>Qt::TabFocus</enum>
+                </property>
+                <property name="text">
+                    <string>Reparto:</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="department_lineEdit">
+                <property name="geometry">
+                    <rect>
+                        <x>140</x>
+                        <y>40</y>
+                        <width>640</width>
+                        <height>24</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="department_specified_label">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>80</y>
+                        <width>100</width>
+                        <height>24</height>
+                    </rect>
+                </property>
+                <property name="focusPolicy">
+                    <enum>Qt::TabFocus</enum>
+                </property>
+                <property name="text">
+                    <string>Sezione reparto:</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="department_specified_lineEdit">
+                <property name="geometry">
+                    <rect>
+                        <x>140</x>
+                        <y>80</y>
+                        <width>640</width>
+                        <height>24</height>
+                    </rect>
+                </property>
+                <property name="focusPolicy">
+                    <enum>Qt::TabFocus</enum>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="search_pushButton">
+                <property name="geometry">
+                    <rect>
+                        <x>590</x>
+                        <y>120</y>
+                        <width>90</width>
+                        <height>26</height>
+                    </rect>
+                </property>
+                <property name="focusPolicy">
+                    <enum>Qt::TabFocus</enum>
+                </property>
+                <property name="text">
+                    <string>Cerca</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="cancel_pushButton">
+                <property name="geometry">
+                    <rect>
+                        <x>690</x>
+                        <y>120</y>
+                        <width>90</width>
+                        <height>26</height>
+                    </rect>
+                </property>
+                <property name="focusPolicy">
+                    <enum>Qt::TabFocus</enum>
+                </property>
+                <property name="text">
+                    <string>Annulla</string>
+                </property>
+            </widget>
+            <widget class="Line" name="line">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>150</y>
+                        <width>760</width>
+                        <height>10</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="QTableWidget" name="search_result_tableWidget">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>190</y>
+                        <width>760</width>
+                        <height>390</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                </property>
+                <property name="autoScrollMargin">
+                    <number>10</number>
+                </property>
+                <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <property name="showDropIndicator" stdset="0">
+                    <bool>true</bool>
+                </property>
+                <property name="dragDropOverwriteMode">
+                    <bool>false</bool>
+                </property>
+                <property name="cornerButtonEnabled">
+                    <bool>false</bool>
+                </property>
+                <property name="rowCount">
+                    <number>0</number>
+                </property>
+                <property name="columnCount">
+                    <number>3</number>
+                </property>
+                <attribute name="horizontalHeaderVisible">
+                    <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderCascadingSectionResizes">
+                    <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                    <number>130</number>
+                </attribute>
+                <attribute name="horizontalHeaderMinimumSectionSize">
+                    <number>40</number>
+                </attribute>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                    <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                    <bool>false</bool>
+                </attribute>
+                <attribute name="verticalHeaderVisible">
+                    <bool>true</bool>
+                </attribute>
+                <column>
+                    <property name="text">
+                        <string>Reparto</string>
+                    </property>
+                </column>
+                <column>
+                    <property name="text">
+                        <string>Sezione reparto</string>
+                    </property>
+                </column>
+                <column>
+                    <property name="text">
+                        <string>Interno tel.</string>
+                    </property>
+                </column>
+            </widget>
+            <widget class="QLabel" name="result_label">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>160</y>
+                        <width>160</width>
+                        <height>24</height>
+                    </rect>
+                </property>
+                <property name="focusPolicy">
+                    <enum>Qt::TabFocus</enum>
+                </property>
+                <property name="text">
+                    <string>Risultati trovati: 0</string>
+                </property>
+            </widget>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
