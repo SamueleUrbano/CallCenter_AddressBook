@@ -1,7 +1,7 @@
 from PyQt5 import uic
 
 from PyQt5.QtCore import *
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtGui
 
 from src.controller.mainActivityController import MainActivityController
 from src.util.configUtil import ConfigUtil
@@ -15,7 +15,7 @@ class MainActivity(QtWidgets.QMainWindow):
 
         config = ConfigUtil(configType="APPLICATION")
         self.activityController = MainActivityController()
-
+        
         uic.loadUi(config.getApplicationResoucePath() + config.getApplicationResourceByName(resourceName='ui_mainactivity_name'), self)
 
         self.resultLabel = self.findChild(QtWidgets.QLabel, 'result_label')

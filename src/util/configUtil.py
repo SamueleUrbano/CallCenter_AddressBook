@@ -20,6 +20,9 @@ class ConfigUtil:
     def getApplicationResourceByName(self, resourceName):
         return self.config.get('APPLICATION_CONFIG', resourceName) if resourceName != None else None
     
+    def getApplicationFont(self):
+        return self.config.get('APPLICATION_CONFIG', 'font_path')
+    
     def getDatabaseResourcePath(self):
         return self.config.get('DATABASE_CONFIG', 'database_path')
     
